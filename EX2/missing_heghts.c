@@ -13,6 +13,15 @@ int main(void)
         
 	float avg;
 	avg = (p1+p2+p3)/3;
-	printf("Average %.2f", avg);
+	printf("Average %.2f\n", avg);
+       
+	float total_height,missing_height;
+	total_height = avg * 5;
+
+	missing_height = (total_height - (p1+p2+p3)) / 2;
+
+	printf("Missing height of person 4: %.2f\n", missing_height);
+        printf("MIssing height of person 5: %.2f\n", missing_height);
+
 	return 0;
 }
